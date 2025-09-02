@@ -266,7 +266,8 @@ section {
 .cta-learning .section-title {
   background-color: var(--clr-neutral-900);
   font-size: var(--fs-300);
-  width:20vw;
+  width:min-content;
+  padding: 0 0.5rem;
 }
 
 .cta-learning .first-p {
@@ -287,5 +288,23 @@ section {
 
 .testimonials .container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.testimonials .section-title {
+  --m-width : min-content;
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-accent-400);
+  font-size: var(--fs-300);
+  display: inline-block;
+  width:min-content;
+  padding: 0 0.5rem;
+  /* width: var(--m-width); */
+}
+
+.testimonials .first-p {
+
 }
 /* .  */
