@@ -318,23 +318,44 @@ section {
 .t-dark {
   --bg-clr :var(--clr-neutral-900);
   --fg-clr : var(--clr-neutral-100);
+  --name-clr : var(--clr-accent-400);
+  --before-clr: var(--clr-accent-400);
 }
 
 .t-light {
   --bg-clr : var(--clr-accent-400);
   --fg-clr : var(--clr-neutral-900);
+  --name-clr : var(--clr-neutral-900);
+  --before-clr: var(--clr-neutral-900)
 }
 
 .testimonial {
   background-color: var(--bg-clr, var(--clr-neutral-900));
   color: var(--fg-clr, var(--clr-neutral-100));
-  padding: 2rem 2rem 1.5rem 1rem;
+  padding: 2rem 2rem 2rem 2rem;
   flex-basis: 25%;
   text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.testimonial::before {
+  content: "";
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--before-clr, red);
+  transform: translate(-3rem, -3rem);
+  z-index: -100;
+}
+
+.testimonial p:nth-child(1) {
+  margin-bottom: 4rem;
 }
 
 .testimonial .name {
   font-weight: var(--fw-700);
+  color: var(--name-clr);
 }
 
 
