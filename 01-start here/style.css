@@ -333,20 +333,37 @@ section {
   background-color: var(--bg-clr, var(--clr-neutral-900));
   color: var(--fg-clr, var(--clr-neutral-100));
   padding: 2rem 2rem 2rem 2rem;
-  flex-basis: 25%;
+  flex-basis: 28%;
   text-align: left;
+}
+
+.split--testimonial {
   position: relative;
   z-index: 10;
 }
 
-.testimonial::before {
+/* .testimonial::before {
   content: "";
   display: inline-block;
   width: 5rem;
   height: 5rem;
   background-color: var(--before-clr, red);
-  transform: translate(-3rem, -3rem);
+  //transform: translate(-2.5rem, -2.5rem);
   z-index: -100;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+} */
+
+.testimonial .layer {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--before-clr, red);
+  z-index: -100;
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
 }
 
 .testimonial p:nth-child(1) {
