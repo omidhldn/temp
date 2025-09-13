@@ -342,20 +342,21 @@ section {
   z-index: 10;
 }
 
-/* .testimonial::before {
+.testimonial::before {
   content: "";
   display: inline-block;
   width: 5rem;
   height: 5rem;
   background-color: var(--before-clr, red);
-  //transform: translate(-2.5rem, -2.5rem);
-  z-index: -100;
+  transform: translate(-2.75rem, -2.75rem);
   position: absolute;
+  z-index: -100;
+  /* position: absolute;
   top: -0.5rem;
-  left: -0.5rem;
-} */
+  left: -0.5rem; */
+}
 
-.testimonial .layer {
+/* .testimonial .layer {
   display: inline-block;
   width: 5rem;
   height: 5rem;
@@ -364,7 +365,7 @@ section {
   position: absolute;
   top: -0.5rem;
   left: -0.5rem;
-}
+} */
 
 .testimonial p:nth-child(1) {
   margin-bottom: 4rem;
